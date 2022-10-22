@@ -1,0 +1,210 @@
+.text-center{
+    text-align: center !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.column{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.column-full{
+    width: 100%;
+}
+
+.column-fourth{
+    width: 25%;
+}
+
+.column-third{
+    width: 33.333333%;
+}
+
+.column-half{
+    width: 50%;
+}
+
+.clear{
+    clear: both;
+}
+:root{
+    --heightheder: 48px;
+}
+/* Slider */
+.image-slider {
+    padding-top: 50%;
+    position: relative;
+    background: url(/assets/img/Background/background.png) top center / cover no-repeat;    
+    /* background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 360px;
+    height: auto; */
+}
+
+#content .content-general{
+    /* min-width: 50%; */
+    width: 818px;
+    /* width: 50%; */
+    max-width: 100%;
+    padding: 68px 16px  118px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .first-wishes{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#content .women-vietnam{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    font-style: italic;
+    margin: 22px 0;
+    opacity: 0.7;
+}
+
+#content .list-wishes{
+    margin-top: 50px;
+}
+#content .content-general .list-wishes{
+    margin-top: 14px;
+}
+/* THIEP */
+#content .content-general .list-wishes div{
+    height: auto;
+    width: 154px;
+
+    border-radius: 25px;
+    position: relative;   
+    padding: 2px;
+    display: grid;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* END THIEP */
+
+/* Clones Member */
+#content .member-img{
+    font-size: 18px;
+}
+#content .content-general .list-wishes .member-wish{
+    margin: 20px;
+}
+#content .content-general .list-wishes .member-card{
+    /* width: 154px;
+    height: 174px;  */
+    width: 110%;
+    height: 100%;   
+    border-radius: 20px;
+    z-index: 1;
+}
+#content .content-general .list-wishes .member-card:hover{
+    height: auto;
+    box-shadow: 6px 6px 10px 4px pink;
+}
+
+/* BUTTON COVER */
+#content .content-general .list-wishes .button {
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    /* display: flex;
+    justify-content: center; */
+    align-content: center;
+    margin-left: 17px;
+    text-decoration: none;
+}
+/* END BUTTON COVER */
+/* BUTTON */
+#content .content-general .list-wishes .send{
+    width: 140px;
+    height: 50px;
+
+    border-radius: 10px;
+    padding: 0px 3px;
+    margin: 1px 2px 6px 2px;
+    border-style: none;
+
+    background-color: pink;
+    display: inline-block;
+    
+    color: #ffffff;
+    cursor: pointer;
+    
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold; 
+    
+}
+#content .content-general .list-wishes .send:hover{
+    
+    transform: scale(1.1);
+    z-index: 1;
+}
+/* END BUTTON */
+
+
+.modal.open{
+    display: flex;
+}
+.modal{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.container-modal{
+    background-color: rgb(240,240,225);
+    width: 600px;
+    max-width: calc(100% - 36px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+.close-modal{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: rgb(240,240,225);
+    padding: 12px;
+    opacity: 0.8;
+    cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1152.gif),pointer;
+}
+.close-modal:hover{
+    opacity: 1;
+}
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-69px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
